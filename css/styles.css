@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgb(214, 171, 142);
+}
+
+h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+p {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+}
