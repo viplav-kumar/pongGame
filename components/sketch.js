@@ -21,11 +21,16 @@ function setup(){
     matchTiedSong = loadSound('assets/match-tied.mp3');
     gameWonSong = loadSound('assets/game-won.mp3');
     startToken = 0;
-    createCanvas(400, 400);
+    createCanvas(400, 400).mouseClicked(startGame);
     rectMode(CENTER);
     p_l = new Paddle(10);
     p_r = new Paddle(390);
     ball = new Ball();
+}
+
+function startGame(){
+    startToken = 1;
+    startGameSong.play();
 }
 
 function keyPressed(){
