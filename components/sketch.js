@@ -10,6 +10,7 @@ let ballPaddleCollideSong;
 let matchTiedSong;
 let gameWonSong;
 let graduateFont;
+let flag = 0;
 
 function preload(){
     graduateFont = loadFont('assets/Graduate-Regular.ttf');
@@ -29,8 +30,26 @@ function setup(){
 }
 
 function startGame(){
-    startToken = 1;
-    startGameSong.play();
+    if(flag == 0){
+        startToken = 1;
+        startGameSong.play();
+        flag = 1;
+    }
+}
+
+function mouseClicked(){
+    if(mouseX >= 380 && mouseY <= 20){
+        p_r.change_dir(-3);
+    }
+    if(mouseX >= 380 && mouseY >= 380){
+        p_r.change_dir(3);
+    }
+    if(mouseX <= 20 && mouseY <= 20){
+        p_l.change_dir(-3);
+    }
+    if(mouseX <= 20 && mouseY >= 380){
+        p_l.change_dir(3);
+    }
 }
 
 function keyPressed(){
