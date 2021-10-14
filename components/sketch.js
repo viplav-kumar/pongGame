@@ -38,16 +38,16 @@ function startGame(){
 }
 
 function mouseClicked(){
-    if(mouseX >= 380 && mouseY <= 20){
+    if(mouseX >= 300 && mouseY <= 60){
         p_r.change_dir(-3);
     }
-    if(mouseX >= 380 && mouseY >= 380){
+    if(mouseX >= 300 && mouseY >= 240){
         p_r.change_dir(3);
     }
-    if(mouseX <= 20 && mouseY <= 20){
+    if(mouseX <= 100 && mouseY <= 60){
         p_l.change_dir(-3);
     }
-    if(mouseX <= 20 && mouseY >= 380){
+    if(mouseX <= 100 && mouseY >= 240){
         p_l.change_dir(3);
     }
 }
