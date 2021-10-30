@@ -1,4 +1,4 @@
-# Pong-Game
+# Pong Game
 ABOUT PROJECT : 
 
 ABOUT GAME : 
