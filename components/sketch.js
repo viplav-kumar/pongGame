@@ -78,8 +78,8 @@ function draw(){
     clear();
     if(startToken == 0){
         background(30);
-        textSize(20);
-        text('Press ENTER to start the game.', 23, 200);
+        textSize(16);
+        text('GAMING CONTROLS :\n\nFor LEFT paddle : Use "a" & "z" keys.\nFor RIGHT paddle : Use "up arrow" & \n                              "down arrow" keys.\n\n\n\n\nPress ENTER to start the game.', 25, 115);
         fill(255);
     }
     if(startToken == 1){
